@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../jquery.js"></script>
+
+    <style>
+        .div {
+            height: 150px;
+            width: 150px;
+            background-color: darkmagenta;
+            display: none;
+        }
+    </style>
+
+    <script>
+
+        // use 2 or more function at a time is called chaining
+
+        $(function () {
+            $(".btn").click(function () {
+                // $(".div").hide(1500).show(1500);
+                $(".div").slideDown(1500).slideUp(1500);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button class="btn">Click Here</button>
+
+    <hr>
+
+    <div class="div">
+
+    </div>
+
+</body>
+
+</html>

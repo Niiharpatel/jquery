@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="../../jquery.js"></script>
+
+    <script>
+        $(function () {
+            $(".btn1").click(function () {
+                alert($("p").text());
+            })
+
+            $(".btn2").click(function () {
+                alert($("p").html());
+            })
+
+            $(".btn3").click(function () {
+                alert($("input").val());
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+    <button class="btn1">Text</button>
+    <button class="btn2">Html</button>
+    <button class="btn3">Value</button>
+
+    <p><b>Hello user this is getattribute function</b></p>
+    <br>
+    <input type="text" name="" id="" value="">
+
+
+
+</body>
+
+</html>

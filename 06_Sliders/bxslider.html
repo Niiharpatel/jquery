@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- j qeury cdn -->
+    <script src="../../../jquery.js"></script>
+
+    <!-- bx slider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <!-- bx slider css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+
+
+
+    <script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                auto: true,
+                autoControls: true,
+                stopAutoOnClick: true,
+                pager: true,
+                slideWidth: 700,
+
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <div class="bxslider">
+        <div class="sub"><img src="img1.jpg" alt=""></div>
+        <div class="sub"><img src="img2.jpg" alt=""></div>
+        <div class="sub"><img src="img3.jpg" alt=""></div>
+        <div class="sub"><img src="img4.jpg" alt=""></div>
+        <div class="sub"><img src="img5.jpg" alt=""></div>
+    </div>
+
+</body>
+
+</html>

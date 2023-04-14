@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../jquery.js"></script>
+
+    <style>
+        .div1 {
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+        }
+
+        .div2 {
+            height: 300px;
+            width: 300px;
+            background-color: green;
+        }
+
+        .div {
+            height: 300px;
+            width: 300px;
+            background-color: darkred;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $(".btn1").click(function () {
+                $(".div1").addClass("div");
+            })
+
+            $(".btn2").click(function () {
+                $(".div1").removeClass("div");
+            })
+
+
+            $(".btn3").click(function () {
+                $(".div2").toggleClass("div");
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button class="btn1">Add</button>
+    <button class="btn2">Remove</button>
+    <button class="btn3">Toggle</button>
+    <br>
+    <hr>
+
+    <div class="div1"></div><br>
+    <div class="div2"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../jquery.js"></script>
+    <style>
+        .div1 {
+            height: 150px;
+            width: 150px;
+            background-color: darkmagenta;
+            display: none;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $(".btn").click(function () {
+                $(".div1").slideDown(1500);
+            })
+
+            $(".div1").mouseover(function () {
+                $(".div1").slideUp(2000);
+            })
+
+            $(".div1").mouseout(function () {
+                $(".div1").stop();
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+    <button class="btn">Slide Down</button>
+
+    <hr>
+    <div class="div1"></div>
+
+</body>
+
+</html>
