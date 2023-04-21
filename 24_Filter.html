@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../jquery.js"></script>
+    <style>
+        div {
+            height: auto;
+            width: 500px;
+            padding: 10px;
+            margin: 20px;
+            border: 2px solid black;
+        }
+
+        .fil {
+            color: blue;
+            font-size: 20px;
+            background-color: gray;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $(".btn").click(function () {
+
+                // $("div").filter(".div2").addClass("fil");
+                // $("div").first().addClass("fil");
+                // $("div").last().addClass("fil");
+                // $("div").eq(2).addClass("fil"); work on index number
+                $("div").not(".div3").addClass("fil");
+
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button class="btn">Click to Filter</button>
+    <br>
+    <hr>
+
+    <div class="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore natus nam animi. Magnam expedita
+        quae obcaecati quam sequi ullam explicabo? Eveniet tempora dolorem doloribus alias culpa quam dolore maiores
+        unde.</div>
+    <div class="div2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga odio eum laborum, obcaecati iste
+        quasi? Consequuntur delectus mollitia eaque exercitationem officiis similique tempore aliquid amet? Reiciendis
+        distinctio exercitationem pariatur officia.</div>
+    <div class="div3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, unde necessitatibus? Error fuga
+        officiis ab at blanditiis dolor suscipit numquam recusandae dolorum provident, a nam deleniti, unde molestias
+        fugiat quibusdam!</div>
+    <div class="div4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At incidunt dolorem blanditiis nisi
+        cumque expedita laborum ipsa amet, voluptatum enim, natus, harum minus omnis quidem consectetur magnam?
+        Laudantium, dolore magnam.</div>
+</body>
+
+</html>

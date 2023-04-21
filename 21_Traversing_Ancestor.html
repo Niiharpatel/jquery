@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../jquery.js"></script>
+
+    <script>
+        $(function () {
+            $(".btn").click(function () {
+                // $("h1").parent().addClass("change");  => select only single parent...
+                // $("h1").parents().addClass("change");  => select all parents...
+                $("h1").parentsUntil(".main").addClass("change");  // => until which you want
+            })
+        })
+    </script>
+
+    <style>
+        div {
+            margin: 15px;
+            border: 5px solid black;
+        }
+
+        h1 {
+            margin: 15px;
+            padding: 10px;
+            border: 5px solid red;
+        }
+
+        .change {
+            border: 5px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- traversing means move throught ancestor, ancestor include=> parent(), parents(), parentuntil() -->
+
+
+    <button class="btn">Click Here</button>
+    <br>
+    <hr>
+    <div class="main">
+        <div class="main1">
+            <div class="sub1">
+                <div class="sub-1">
+                    <h1>Hello user this is ancestor function.</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="main2">
+            <div class="sub2">
+                <div class="sub-2">
+                    <h1>Hello user this is ancestor function.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
